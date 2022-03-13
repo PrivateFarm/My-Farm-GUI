@@ -1,0 +1,295 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Equip = Instance.new("TextButton")
+local Heading = Instance.new("TextLabel")
+local Farm = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Hud = Instance.new("TextButton")
+local Ping = Instance.new("TextButton")
+local Clouds = Instance.new("TextButton")
+local Afk = Instance.new("TextButton")
+local Rumble = Instance.new("TextButton")
+local daytonight = Instance.new("TextButton")
+local LockPLR = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.575321734, 0, 0.277873069, 0)
+Frame.Size = UDim2.new(0, 534, 0, 332)
+Frame.Active = true
+Frame.Draggable = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(-5.96046448e-08, 0, -0.000905424356, 0)
+ImageLabel.Size = UDim2.new(0, 534, 0, 344)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=9049618066"
+
+Equip.Name = "Equip"
+Equip.Parent = Frame
+Equip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Equip.Position = UDim2.new(0.685393155, 0, 0.876069427, 0)
+Equip.Size = UDim2.new(0, 114, 0, 50)
+Equip.Font = Enum.Font.Creepster
+Equip.Text = "Equip"
+Equip.TextColor3 = Color3.fromRGB(180, 180, 180)
+Equip.TextSize = 34.000
+Equip.TextWrapped = true
+
+
+Heading.Name = "Heading"
+Heading.Parent = Frame
+Heading.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Heading.Position = UDim2.new(0, 0, 0.878535807, 0)
+Heading.Size = UDim2.new(0, 200, 0, 50)
+Heading.Font = Enum.Font.DenkOne
+Heading.Text = "Brandon's Ultimate GUI"
+Heading.TextColor3 = Color3.fromRGB(180, 180, 180)
+Heading.TextSize = 20.000
+
+Farm.Name = "Farm"
+Farm.Parent = Frame
+Farm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Farm.Position = UDim2.new(0.406366944, 0, 0.876069427, 0)
+Farm.Size = UDim2.new(0, 114, 0, 50)
+Farm.Font = Enum.Font.Creepster
+Farm.Text = "Farm"
+Farm.TextColor3 = Color3.fromRGB(180, 180, 180)
+Farm.TextSize = 34.000
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(180, 180, 180)
+ScrollingFrame.Position = UDim2.new(-0.00187277468, 0, 0.543162465, 0)
+ScrollingFrame.Size = UDim2.new(0, 137, 0, 101)
+
+Hud.Name = "Hud"
+Hud.Parent = ScrollingFrame
+Hud.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hud.Position = UDim2.new(0.0656934306, 0, 0.0352112688, 0)
+Hud.Size = UDim2.new(0, 105, 0, 50)
+Hud.Font = Enum.Font.Creepster
+Hud.Text = "Del Hud"
+Hud.TextColor3 = Color3.fromRGB(180, 180, 180)
+Hud.TextSize = 24.000
+
+Ping.Name = "Ping"
+Ping.Parent = ScrollingFrame
+Ping.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Ping.Position = UDim2.new(0.0656934306, 0, 0.145990461, 0)
+Ping.Size = UDim2.new(0, 105, 0, 50)
+Ping.Font = Enum.Font.Creepster
+Ping.Text = "Del Ping"
+Ping.TextColor3 = Color3.fromRGB(180, 180, 180)
+Ping.TextSize = 24.000
+
+Clouds.Name = "Clouds"
+Clouds.Parent = ScrollingFrame
+Clouds.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Clouds.Position = UDim2.new(0.0656934306, 0, 0.261074483, 0)
+Clouds.Size = UDim2.new(0, 105, 0, 50)
+Clouds.Font = Enum.Font.Creepster
+Clouds.Text = "Del Clouds"
+Clouds.TextColor3 = Color3.fromRGB(180, 180, 180)
+Clouds.TextSize = 24.000
+
+Afk.Name = "Afk"
+Afk.Parent = ScrollingFrame
+Afk.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Afk.Position = UDim2.new(0.0510948896, 0, 0.356099486, 0)
+Afk.Size = UDim2.new(0, 105, 0, 50)
+Afk.Font = Enum.Font.Creepster
+Afk.Text = "Anti - Afk"
+Afk.TextColor3 = Color3.fromRGB(180, 180, 180)
+Afk.TextSize = 24.000
+
+Rumble.Name = "Rumble"
+Rumble.Parent = ScrollingFrame
+Rumble.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Rumble.Position = UDim2.new(0.0510948896, 0, 0.459507018, 0)
+Rumble.Size = UDim2.new(0, 105, 0, 50)
+Rumble.Font = Enum.Font.Creepster
+Rumble.Text = "Del Rumble"
+Rumble.TextColor3 = Color3.fromRGB(180, 180, 180)
+Rumble.TextSize = 20.000
+
+daytonight.Name = "day to night"
+daytonight.Parent = ScrollingFrame
+daytonight.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+daytonight.Position = UDim2.new(0.0656934306, 0, 0.552715719, 0)
+daytonight.Size = UDim2.new(0, 105, 0, 50)
+daytonight.Font = Enum.Font.Creepster
+daytonight.Text = "Change Day/Night"
+daytonight.TextColor3 = Color3.fromRGB(180, 180, 180)
+daytonight.TextScaled = true
+daytonight.TextSize = 14.000
+daytonight.TextWrapped = true
+
+LockPLR.Name = "LockPLR"
+LockPLR.Parent = Frame
+LockPLR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LockPLR.Position = UDim2.new(0.475655317, 0, 0.697765529, 0)
+LockPLR.Size = UDim2.new(0, 183, 0, 50)
+LockPLR.Font = Enum.Font.Creepster
+LockPLR.Text = "Lock Player"
+LockPLR.TextColor3 = Color3.fromRGB(180, 180, 180)
+LockPLR.TextSize = 30.000
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.Position = UDim2.new(-0.0018726592, 0, 1.86264515e-09, 0)
+Close.Size = UDim2.new(0, 50, 0, 50)
+Close.Font = Enum.Font.Creepster
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(180, 180, 180)
+Close.TextSize = 46.000
+
+--// Script
+
+Farming = false
+Locked = false
+
+function Lock(value)
+    if value == true then
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("Part") then
+                v.Anchored = true
+            end
+        end
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("MeshPart") then
+                v.Anchored = true
+            end
+        end
+    elseif value == false then
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA("Part") then
+				v.Anchored = false
+			end
+		end
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v:IsA("MeshPart") then
+				v.Anchored = false
+			end
+		end
+    end
+end
+
+Equip.MouseButton1Click:Connect(function()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.Name == "Double Weight" then
+            v:Activate()
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end)
+
+Farm.MouseButton1Click:Connect(function()
+    if Farming == false then
+        Farming = true
+        repeat
+            for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                if v.Name == "Double Weight" then
+                    v:Activate()
+                end
+            end
+            wait()
+        until Farming == false
+    elseif Farming == true then
+        Farming = false
+    end
+end)
+
+Hud.MouseButton1Click:Connect(function()
+    game:GetService("Players").LocalPlayer.PlayerGui.HUD:Destroy()
+end)
+
+Ping.MouseButton1Click:Connect(function()
+    local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+    local g = game
+	local w = g.Workspace
+	local l = g.Lighting
+	local t = w.Terrain
+	t.WaterWaveSize = 0
+	t.WaterWaveSpeed = 0
+	t.WaterReflectance = 0
+	t.WaterTransparency = 0
+	l.GlobalShadows = false
+	l.FogEnd = 9e9
+	l.Brightness = 0
+	settings().Rendering.QualityLevel = "Level01"
+	for i,v in pairs(g:GetDescendants()) do
+		if v:IsA("Part") or v:IsA("Union") or v:IsA("MeshPart") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+			v.Material = "Plastic"
+			v.Reflectance = 0
+		elseif v:IsA("Decal") and decalsyeeted then
+			v.Transparency = 1
+		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+			v.Lifetime = NumberRange.new(0)
+		elseif v:IsA("Explosion") then
+			v.BlastPressure = 1
+			v.BlastRadius = 1
+		end
+	end
+	for i,e in pairs(l:GetChildren()) do
+		if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+			e.Enabled = false
+		end
+	end
+end)
+
+Clouds.MouseButton1Click:Connect(function()
+    game:GetService("Workspace").Clouds:Destroy()
+	for i,v in pairs(player.PlayerScripts:GetChildren()) do
+		if v.Name == "LocalScript" then
+			v:Destroy()
+		end
+	end
+end)
+
+Afk.MouseButton1Click:Connect(function()
+    local VirtualUser=game:service'VirtualUser'
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+	    VirtualUser:CaptureController()
+	    VirtualUser:ClickButton2(Vector2.new())
+    end)
+end)
+
+Rumble.MouseButton1Click:Connect(function()
+    game:GetService("ReplicatedFirst").TourneyQ:Destroy()
+end)
+
+daytonight.MouseButton1Click:Connect(function()
+    if game:GetService("Lighting").ClockTime == 19 then
+		game:GetService("Lighting").ClockTime = 14
+	elseif game:GetService("Lighting").ClockTime == 14 then
+		game:GetService("Lighting").ClockTime = 19
+	end
+end)
+
+LockPLR.MouseButton1Click:Connect(function()
+    if Locked == false then
+        Locked = true
+        Lock(true)
+    elseif Locked == true then
+        Locked = false
+        Lock(false)
+    end
+end)
+
+Close.MouseButton1Click:Connect(function()
+    Frame.Visible = false
+end)
