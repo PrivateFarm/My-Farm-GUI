@@ -7,15 +7,13 @@ currently being supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
+| 5.1.x   | :x:                |
 | 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
+| 4.0.x   | :x:                |
 | < 4.0   | :x:                |
 
 ## Reporting a Vulnerability
 
 Use this section to tell people how to report a vulnerability.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+**If you Leak This or copy anything out of it you will be banned and kicked from the game even worse that could happen is all the mods and strongest people who is over 25B to 60B is considerd to loop you daily!*** So Warning Dont.
